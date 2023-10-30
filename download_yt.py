@@ -2,6 +2,8 @@ import pytube
 import os
 from pytube import YouTube
 from pytube import Channel
+from pydrive.auth import GoogleAuth
+from pydrive.drive import GoogleDrive
 
 # sanitizes file names for windows files
 def sanitize_filename(filename):
@@ -23,7 +25,7 @@ captions_output_directory = os.path.join(current_directory, 'captions')
 print(f'Downloading videos by: {c.channel_name}')
 
 i = 0
-count = 50
+count = 50 # number of videos to download
 vid_count = 0
 while i < len(c.videos) and vid_count < count:
 	# have to use this method before accessing other properties like captions
@@ -46,3 +48,56 @@ while i < len(c.videos) and vid_count < count:
 	except:
 		i += 1
 		continue
+
+
+# upload to google drive
+gauth = GoogleAuth()
+gauth.LocalWebserverAuth()
+drive = GoogleDrive(gauth)
+
+# create gdrive folder for whole dataset
+folder_metadata = {'title': 'cs482-project-dataset','mimeType': 'application/vnd.google-apps.folder'}
+folder = drive.CreateFile(folder_metadata)
+folder.Upload()
+folder_main_id = folder['id']
+print(f"Folder captions created with ID: {folder_main_id}")
+
+# create gdrive folders for captions
+folder_metadata = {'title': 'captions','mimeType': 'application/vnd.google-apps.folder', 'parents': [{'id': folder_main_id}]}
+folder = drive.CreateFile(folder_metadata)
+folder.Upload()
+folder_id = folder['id']
+print(f"Folder captions created with ID: {folder_id}")
+
+# upload to captions gdrive
+for file_name in os.listdir(captions_output_directory):
+    file_path = os.path.join(captions_output_directory, file_name)
+    if os.path.isfile(file_path):
+        print(f"Uploading {file_name} to folder captions")
+        gfile = drive.CreateFile({
+        		'title': file_name,
+        		'parents': [{'id': folder_id}]
+        	})
+        gfile.SetContentFile(file_path)
+        gfile.Upload()
+        print(f"{file_name} has been uploaded to captions")
+
+# create gdrive folders for videos
+folder_metadata = {'title': 'videos','mimeType': 'application/vnd.google-apps.folder', 'parents': [{'id': folder_main_id}]}
+folder = drive.CreateFile(folder_metadata)
+folder.Upload()
+folder_id = folder['id']
+print(f"Folder videos created with ID: {folder_id}")
+
+# upload to videos gdrive
+for file_name in os.listdir(videos_output_directory):
+    file_path = os.path.join(videos_output_directory, file_name)
+    if os.path.isfile(file_path):
+        print(f"Uploading {file_name} to folder videos")
+        gfile = drive.CreateFile({
+        		'title': file_name,
+        		'parents': [{'id': folder_id}]
+        	})
+        gfile.SetContentFile(file_path)
+        gfile.Upload()
+        print(f"{file_name} has been uploaded to videos")
