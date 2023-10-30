@@ -1,0 +1,159 @@
+1
+00:00:00,180 --> 00:00:04,440
+A federal judge has dismissed former  President Donald Trump's defamation  
+
+2
+00:00:04,440 --> 00:00:07,260
+countersuit against writer E. Jean Carroll.
+
+3
+00:00:07,260 --> 00:00:12,960
+And Zoom is scrapping plans to use  customer data to train its AI tools.
+
+4
+00:00:12,960 --> 00:00:17,640
+Good morning. I'm Nora Raum, with NPR  News, and here are today's top stories:
+
+5
+00:00:18,420 --> 00:00:23,400
+President Biden is on a three-state  swing through the western U.S. NPR's  
+
+6
+00:00:23,400 --> 00:00:27,540
+Windsor Johnston reports the president  is starting his trip today in Arizona:
+
+7
+00:00:27,540 --> 00:00:33,960
+"Biden is expected to announce plans for a new  national monument to preserve one million acres  
+
+8
+00:00:33,960 --> 00:00:40,020
+during a stop today at the Grand Canyon. From  Arizona, Biden will then head to Albuquerque,  
+
+9
+00:00:40,020 --> 00:00:46,020
+New Mexico, to make another pitch for his  economic agenda. On Thursday, Biden will  
+
+10
+00:00:46,020 --> 00:00:52,200
+travel to Salt Lake City, Utah, to mark one year  since Congress passed the bipartisan PACT Act,  
+
+11
+00:00:52,200 --> 00:00:57,540
+which provides benefits to U.S. service  members who were exposed to toxic substances."
+
+12
+00:00:57,540 --> 00:00:59,640
+NPR's Windsor Johnston.
+
+13
+00:00:59,640 --> 00:01:04,260
+A federal judge has dismissed former  President Donald Trump's defamation  
+
+14
+00:01:04,260 --> 00:01:09,660
+countersuit against writer E. Jean  Carroll. NPR's Jaclyn Diaz has more:
+
+15
+00:01:09,660 --> 00:01:15,060
+"Trump and his attorneys had claimed that the  author and former magazine writer defamed Trump  
+
+16
+00:01:15,060 --> 00:01:21,600
+when she said he raped her on CNN. When she said  this, Carroll was being interviewed after she won  
+
+17
+00:01:21,600 --> 00:01:26,940
+one of her lawsuits against Trump. The jury  in that case found Trump liable for sexually  
+
+18
+00:01:26,940 --> 00:01:33,180
+abusing Carroll and defaming her. In dismissing  Trump's countersuit, federal judge Lewis Kaplan  
+
+19
+00:01:33,180 --> 00:01:38,220
+said Carroll's statements repeating the claim  that Trump had raped her were substantially true.  
+
+20
+00:01:38,940 --> 00:01:42,840
+This latest development means  that an upcoming January 15th  
+
+21
+00:01:42,840 --> 00:01:46,980
+trial in a previous lawsuit filed by  Carroll against Trump will continue.
+
+22
+00:01:48,000 --> 00:01:50,040
+"Jaclyn Diaz, NPR News."
+
+23
+00:01:50,040 --> 00:01:55,320
+Executives at Zoom say the company  does not use customer data to train  
+
+24
+00:01:55,320 --> 00:02:01,020
+its artificial intelligence tools. As NPR's  Bobby Allen reports, the announcement comes  
+
+25
+00:02:01,020 --> 00:02:06,780
+after reports that Zoom uses what people  say on video calls to advance its AI:
+
+26
+00:02:06,780 --> 00:02:10,560
+"Tech bloggers recently discovered that  Zoom quietly updated its terms of service  
+
+27
+00:02:10,560 --> 00:02:14,220
+to say that Zoom reserves a right  to train its AI on customers' video,  
+
+28
+00:02:14,220 --> 00:02:19,260
+audio and chat transcripts without explicit  permission. After a backlash from customers,  
+
+29
+00:02:19,260 --> 00:02:23,460
+Zoom went on the defensive, saying in a  statement that it would not use customer  
+
+30
+00:02:23,460 --> 00:02:28,200
+data to improve its AI without consent. But  critics point out that Zoom has a poor track  
+
+31
+00:02:28,200 --> 00:02:32,940
+record on data privacy. Zoom was criticized  in 2020 after providing end-to-end encryption  
+
+32
+00:02:32,940 --> 00:02:38,280
+only to customers who paid for the service. A  year later, the company agreed to a $85 million  
+
+33
+00:02:38,280 --> 00:02:43,080
+settlement over sharing customer data with  Google, Facebook and LinkedIn without consent.
+
+34
+00:02:43,080 --> 00:02:44,880
+"Bobby Allen, NPR News."
+
+35
+00:02:44,880 --> 00:02:48,060
+The polls are open in Ohio in a special election.  
+
+36
+00:02:48,060 --> 00:02:52,980
+Voters are deciding whether to raise the  threshold for amending the State Constitution  
+
+37
+00:02:52,980 --> 00:02:57,540
+and to impose more stringent standards to  get an amendment on the ballot in the first  
+
+38
+00:02:57,540 --> 00:03:03,840
+place. Abortion rights activists oppose the  changes. In November, voters in Ohio are to  
+
+39
+00:03:03,840 --> 00:03:08,880
+consider a proposed constitutional amendment  to protect access to abortion in the state.
+
+40
+00:03:09,480 --> 00:03:12,540
+You're listening to NPR News, from Washington.
