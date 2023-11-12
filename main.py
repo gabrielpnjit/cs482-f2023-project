@@ -52,11 +52,14 @@ embeddings = []
 
 for i in range(len(frames)):
 	print(f'Frame {i}/{len(frames)-1}')
-	embeddings.append(get_embedding(frames[i]))
+	embeddings.append(get_embedding(frames[i]).detach().numpy())
 
 for i in range(len(frames)):
 	frame_path = os.path.join(frames_dir, f'frame{i}.jpg')
 	embedding_path = os.path.join(embeddings_dir, f'embedding{i}.npy')
 
 	cv2.imwrite(frame_path, frames[i] * 255) # rescale and save frame
-	np.save(embedding_path, embeddings[i].detach().numpy()) # save embedding
+	np.save(embedding_path, embeddings[i]) # save embedding
+
+# combination with simple aggregation
+mean_embedding = np.mean(embeddings, axis=0)
