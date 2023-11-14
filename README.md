@@ -1,12 +1,12 @@
 # cs482-f2023-project
 
-Search example:
+## Search example:
 ![image](https://github.com/gabrielpnjit/cs482-f2023-project/assets/90277223/2cbed003-a056-46a0-a345-ce589a77452f)
 
-Input Image:
+### Input Image:
 ![frame0](https://github.com/gabrielpnjit/cs482-f2023-project/assets/90277223/77c41a00-6080-4132-b58f-1207c569998c)
 
-Query Results:
+### Query Results:
 ![frame0](https://github.com/gabrielpnjit/cs482-f2023-project/assets/90277223/63672678-addf-494f-ad13-6539dc0bb63a)
 ![frame3](https://github.com/gabrielpnjit/cs482-f2023-project/assets/90277223/2a309139-a182-416e-8bd1-f52ebd1f2058)
 ![frame11](https://github.com/gabrielpnjit/cs482-f2023-project/assets/90277223/82177ccc-4195-48ec-b04b-b4bfa11352aa)
