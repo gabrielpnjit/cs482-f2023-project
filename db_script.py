@@ -6,6 +6,7 @@ from nltk.tokenize import word_tokenize
 import nltk
 from nltk.corpus import stopwords
 import re
+import os
 
 nltk.download('stopwords')
 nltk.download('punkt')
@@ -67,9 +68,12 @@ def insert_text_embedding(file_path, video_title):
     cur.close()
     conn.close()
 
-insert_text_embedding('captions/2,000 Bodies Recovered After Dam Bursts In Derna, Libya _ NPR News Now.srt', '2,000 Bodies Recovered After Dam Bursts In Derna, Libya _ NPR News Now')
 # insert video frame embeddings
 # for i in range(50):
 # 	insert_embedding(f'video_embeddings/2nd Batch Of Aid Reaches Gaza As Israeli Air Strikes Intensify  NPR News Now/embeddings/embedding{i}.npy', '2nd Batch Of Aid Reaches Gaza As Israeli Air Strikes Intensify  NPR News Now', i)
 
 # insert video caption embeddings
+caption_files = [f for f in os.listdir('captions') if f.endswith(".srt")]
+for caption_file in caption_files:
+    caption_file_path = os.path.join('captions', caption_file)
+    insert_text_embedding(caption_file_path, caption_file)
