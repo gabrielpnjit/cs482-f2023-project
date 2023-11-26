@@ -8,7 +8,7 @@ password = 'password'
 host = 'localhost' # change based on ip of postgres docker container if localhost doesn't work
 port = '5432'
 
-def insert_embedding(file_path):
+def insert_embedding(file_path, video_title, frame_number):
     # Load the embedding
     embedding_image = np.load(file_path)
     embedding_image = embedding_image.flatten()
@@ -17,7 +17,8 @@ def insert_embedding(file_path):
     # Insert into the database
     conn = psycopg2.connect(dbname=dbname, user=user, password=password, host=host, port=port)
     cur = conn.cursor()
-    cur.execute("INSERT INTO video_embeddings (embedding) VALUES (%s)", (embedding_list,))
+    cur.execute("INSERT INTO video_embeddings (video_title, frame_number, embedding) VALUES (%s, %s, %s)", 
+                (video_title, frame_number, embedding_list,))
     conn.commit()
 
     # Close the connection
@@ -25,5 +26,5 @@ def insert_embedding(file_path):
     conn.close()
 
 for i in range(50):
-	insert_embedding(f'video_embeddings/2nd Batch Of Aid Reaches Gaza As Israeli Air Strikes Intensify  NPR News Now/embeddings/embedding{i}.npy')
+	insert_embedding(f'video_embeddings/2nd Batch Of Aid Reaches Gaza As Israeli Air Strikes Intensify  NPR News Now/embeddings/embedding{i}.npy', '2nd Batch Of Aid Reaches Gaza As Israeli Air Strikes Intensify  NPR News Now', i)
 
